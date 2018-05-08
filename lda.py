@@ -281,7 +281,7 @@ def main():
 
     #generate the vocabularies for voca
     voca.gen_vocabs(corpus, prev_voca, prev_lda)
-
+    #docs [term->id]
     docs = [voca.doc_to_ids(doc) for doc in corpus]
     #calculate the number of elements for each timestamp group in docs
     docs_nt = []
